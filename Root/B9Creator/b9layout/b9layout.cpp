@@ -318,11 +318,11 @@ void B9Layout::SetProjectorPreset(int index)
     switch(index)
     {
         case 0:
-            SetProjectorX(QString().number(1024));
-            SetProjectorY(QString().number(768));
-
+            SetProjectorX(QString().number(1920));
+            SetProjectorY(QString().number(1080));
+            qDebug() <<"1920x1080";
             break;
-        case 1:
+       /* case 1:
             SetProjectorX(QString().number(1280));
             SetProjectorY(QString().number(768));
 
@@ -340,6 +340,7 @@ void B9Layout::SetProjectorPreset(int index)
             SetProjectorY(QString().number(1536));
 
             break;
+            */
         default:
 
 
@@ -369,27 +370,29 @@ void B9Layout::UpdateBuildSpaceUI()
     //pixel sizes
     if(project->GetPixelSize() == 50)
         pixi=0;
-    else if(project->GetPixelSize() == 75)
+    else if(project->GetPixelSize() == 60)
         pixi=1;
-    else if(project->GetPixelSize() == 100)
-        pixi=2;
+//    else if(project->GetPixelSize() == 100)
+//        pixi=2;
 
     //projector resolutions
-    if(project->GetResolution() == QVector2D(1024,768))
-        proi=0;
-    else if(project->GetResolution() == QVector2D(1280,768))
-        proi=1;
-    else if(project->GetResolution() == QVector2D(1920,1080))
-        proi=2;
-    else if(project->GetResolution() == QVector2D(1920,1200))
-        proi=3;
-    else if(project->GetResolution() == QVector2D(2048,1536))
-        proi=4;
+//    if(project->GetResolution() == QVector2D(1024,768))
+//        proi=0;
+//    else if(project->GetResolution() == QVector2D(1280,768))
+//        proi=1;
+//    else if(project->GetResolution() == QVector2D(1920,1080))
+//        proi=2;
+//    else if(project->GetResolution() == QVector2D(1920,1200))
+//        proi=3;
+//    else if(project->GetResolution() == QVector2D(2048,1536))
+//        proi=4;
 
 
+    proi=0;
 
     ui.pixelsizecombo->setCurrentIndex(pixi);
     ui.projectorcombo->setCurrentIndex(proi);
+    SetProjectorPreset(0);
 
 }
 
