@@ -118,6 +118,11 @@
                </item>
                <item>
                 <property name="text">
+                 <string>60</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
                  <string>75</string>
                 </property>
                </item>
@@ -145,27 +150,7 @@
                </property>
                <item>
                 <property name="text">
-                 <string>(XGA) 1024x768</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>(SXGA) 1280x1024</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
                  <string>(1080p) 1920x1080</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>(WUXGA) 1920x1200</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>(QXGA) 2048x1536</string>
                 </property>
                </item>
               </widget>
@@ -1348,7 +1333,7 @@
      <x>0</x>
      <y>0</y>
      <width>1600</width>
-     <height>22</height>
+     <height>23</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
