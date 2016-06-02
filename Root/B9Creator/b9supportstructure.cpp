@@ -299,6 +299,7 @@ void B9SupportStructure::ImportAttachmentDataFromStls()
 
             //save the data into the Static List.
             importedData.SetName(stlFiles[i].baseName().remove("SUPPORT_"));
+			qDebug() << importedData.GetName();
             importedData.CenterGeometry();//center the triangles around 0,0,0
             B9SupportStructure::AttachmentDataList.push_back(importedData);
             //clear out importedData
@@ -332,16 +333,16 @@ void B9SupportStructure::FillRegistryDefaults(bool reset, QString supportWeight)
         {
             appSettings.setValue("ADDPRESETWEIGHT","LIGHT");
         appSettings.beginGroup("SUPPORT_TOP");
-            appSettings.setValue("ATTACHSHAPE","Cone 25%");
+            appSettings.setValue("ATTACHSHAPE","Cone 75%");
                 appSettings.setValue("ANGLEFACTOR",0.8);
                 appSettings.setValue("LENGTH",2.0);
                 appSettings.setValue("PENETRATION",0.25);
-                appSettings.setValue("RADIUS",0.5);
+                appSettings.setValue("RADIUS",0.4);
 
             appSettings.endGroup();
             appSettings.beginGroup("SUPPORT_MID");
             appSettings.setValue("ATTACHSHAPE","Cylinder");
-                appSettings.setValue("RADIUS",0.5);
+                appSettings.setValue("RADIUS",0.4);
 
             appSettings.endGroup();
             appSettings.beginGroup("SUPPORT_BOTTOM_GROUNDED");
@@ -358,7 +359,7 @@ void B9SupportStructure::FillRegistryDefaults(bool reset, QString supportWeight)
                 appSettings.setValue("ANGLEFACTOR",0.5);
                 appSettings.setValue("LENGTH",1.0);
                 appSettings.setValue("PENETRATION",0.4);
-                appSettings.setValue("RADIUS",0.5);
+                appSettings.setValue("RADIUS",0.4);
 
             appSettings.endGroup();
         }

@@ -48,7 +48,7 @@
        <enum>QTabWidget::Rounded</enum>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <property name="elideMode">
        <enum>Qt::ElideRight</enum>
@@ -119,16 +119,6 @@
                <item>
                 <property name="text">
                  <string>60</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>75</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>100</string>
                 </property>
                </item>
               </widget>
@@ -902,7 +892,7 @@
               <enum>QTabWidget::Rounded</enum>
              </property>
              <property name="currentIndex">
-              <number>2</number>
+              <number>0</number>
              </property>
              <property name="usesScrollButtons">
               <bool>false</bool>
