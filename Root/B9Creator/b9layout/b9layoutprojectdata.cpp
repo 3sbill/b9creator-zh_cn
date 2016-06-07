@@ -379,7 +379,7 @@
 
     void B9LayoutProjectData::CalculateBuildArea()
 	{
-		SetBuildSpaceSize(QVector3D((xypixel/1000.0)*resolution.x(),(xypixel/1000.0)*resolution.y(),dimentions.z()));
+        SetBuildSpaceSize(QVector3D((xypixel/1000.0)*resolution.x()-0.2,(xypixel/1000.0)*resolution.y()-0.2,dimentions.z()));
 	}
     void B9LayoutProjectData::UpdateZSpace()
 	{

@@ -56,7 +56,7 @@ void SlcExporter::WriteHeader(bool unitsINCH, bool unitsMM, std::string headerst
 {
     //outfile.flags(std::ios_base::trunc);
 
-	outfile << "-SLCVER 2.0\n";
+    //outfile << "-SLCVER 2.0\n"; //zhonghcc
 	if(unitsMM)
 	{
 		outfile << "-UNITS MM";
