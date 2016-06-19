@@ -227,52 +227,52 @@
            </item>
            <item>
             <property name="text">
-             <string>63.5</string>
+             <string>100.00</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>57.15</string>
+             <string>90.00</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>50.8</string>
+             <string>80.00</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>44.45</string>
+             <string>70.00</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>38.1</string>
+             <string>60.00</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>31.75</string>
+             <string>50.00</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>25.4</string>
+             <string>40.00</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>19.05</string>
+             <string>30.00</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>12.7</string>
+             <string>20.00</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>6.35</string>
+             <string>10.00</string>
             </property>
            </item>
           </widget>
