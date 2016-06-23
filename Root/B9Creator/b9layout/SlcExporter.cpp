@@ -56,7 +56,7 @@ void SlcExporter::WriteHeader(bool unitsINCH, bool unitsMM, std::string headerst
 {
     //outfile.flags(std::ios_base::trunc);
 
-    //outfile << "-SLCVER 2.0\n"; //zhonghcc
+    outfile << "-SLCVER 2.0 "; //zhonghcc
 	if(unitsMM)
 	{
 		outfile << "-UNITS MM";
@@ -66,9 +66,9 @@ void SlcExporter::WriteHeader(bool unitsINCH, bool unitsMM, std::string headerst
 		outfile << "-UNITS INCH";
 	}
     //outfile.flags(std::ios_base::binary);
-
-
-	outfile.write(headerstring.c_str(),headerstring.size());
+    qDebug << headerstring;
+    outfile << headerstring ;
+    //outfile.write(headerstring.c_str(),headerstring.size());
 
 	char* terminationsequence = new char[3];
 	terminationsequence[0] = 0x0d;

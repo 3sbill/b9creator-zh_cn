@@ -2365,6 +2365,7 @@ bool B9Layout::SliceWorldToSlc(QString filename)
 
 	//calculate how many layers we need
 	numlayers = qCeil(zhieght/thickness);
+    qDebug() <<numlayers;
 	//calculate how many models there are
 	for(m=0;m<ModelDataList.size();m++)
 	{
@@ -2391,7 +2392,7 @@ bool B9Layout::SliceWorldToSlc(QString filename)
         msgBox.exec();
     }
     //write the header
-    slc.WriteHeader("heeeeelllllloooooo");
+    slc.WriteHeader("-EXTENTS    -34.990,    34.990,   -19.954,    19.950,  -186.000,  -162.750");//heeeeelllllloooooo
     slc.WriteReservedSpace();
     slc.WriteSampleTableSize(1);
     slc.WriteSampleTable(0.0,float(thickness),0.0f);
