@@ -59,15 +59,16 @@ void SlcExporter::WriteHeader(bool unitsINCH, bool unitsMM, std::string headerst
     outfile << "-SLCVER 2.0 "; //zhonghcc
 	if(unitsMM)
 	{
-		outfile << "-UNITS MM";
+        outfile << "-UNITS MM ";
 	}
 	else if(unitsINCH)
 	{
-		outfile << "-UNITS INCH";
+        outfile << "-UNITS INCH ";
 	}
     //outfile.flags(std::ios_base::binary);
-    qDebug << headerstring;
-    outfile << headerstring ;
+    outfile << "-EXTENTS    -34.990,    34.990,   -19.954,    19.950,  -186.000,  -162.750";
+    //std::cout<< headerstring;
+    //outfile << headerstring ;
     //outfile.write(headerstring.c_str(),headerstring.size());
 
 	char* terminationsequence = new char[3];

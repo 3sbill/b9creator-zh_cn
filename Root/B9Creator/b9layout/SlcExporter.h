@@ -39,6 +39,7 @@
 #ifndef SLCEXPORTER
 #define SLCEXPORTER
 #include <fstream>
+#include <iostream>
 
 #include <string>
 
